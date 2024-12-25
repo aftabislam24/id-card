@@ -1,0 +1,83 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fill-form{
+    height: 70vh;
+    width: 30vw;
+    background-color: #eee;
+    border: 2px solid black;
+}
+#nav{
+    height: 12.5%;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.fill{
+    margin: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    height: 35px;
+    width: 110px;
+    margin-left: 80px;
+    background-color: darkgrey;
+    position: relative;
+    top: 30px;
+}
+#idCard{
+    height: 60vh;
+    width: 25vw;
+    background: paleturquoise;
+    display: none;
+
+}
+#img{
+    height: 75px;
+    width: 75px;
+    border: 1px solid darkcyan;
+    text-align: center;
+    position: relative;
+    left: 33%;
+    margin: 40px 10px;
+}
+.idFill{
+    position: relative;
+    left: 13%;
+    margin-top: 20px;
+}
+#idNav{
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.hide{
+    display: none;
+}
+#genIdCard{
+    margin: 20px;
+    position: relative;
+    left: 150px;
+}
+#idPrint{
+    margin: 30px;
+    position: relative;
+    left: 100px;
+}
+@media print{
+    body{
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

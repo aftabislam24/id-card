@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fill-form">
+        <div id="nav">
+            Student Data
+        </div>
+        <div id="form">
+            <form action="script.js">
+                <div class="fill">
+                    <label for="schoolName">School Name :</label>
+                    <input id="schoolName" type="text">
+                </div>
+                <div class="fill">
+                    <label for="studentName">Student Name :</label>
+                    <input id="studentName" type="text">
+                </div>
+                <div class="fill">
+                    <label for="year">Year :</label>
+                    <input id="year" type="number">
+                </div>
+                <div class="fill">
+                    <label for="roll.no">Roll.no :</label>
+                    <input id="roll.no" type="text">
+                </div>
+                <div class="fill">
+                    <label for="contact.no">Contact.no :</label>
+                    <input id="contact.no" type="number">
+                </div>
+            </form>
+        </div>
+        <button id="submit" type="button" onclick="getTxt()">Submit</button>
+        <button id="clear" type="reset" onclick="doClear()">Clera All</button>
+        <button id="genIdCard" type="button" onclick="getIdCard()" >Get Id-Card</button>
+    </div>
+    <div id="idCard" class="print">
+        <div id="img">
+            <img src="#" alt="Pic">
+        </div>
+        <div id="idNav">
+            School Name
+        </div>
+        <div class="idFill">
+            <label for="studentNameVal">Student Name :</label>
+            <label id="studentNameVal" type="text"></label>
+        </div>
+        <div class="idFill">
+            <label for="yearVal">Year :</label>
+            <label id="yearVal" type="text"></label>
+        </div>
+        <div class="idFill">
+            <label for="rollNoVal">Roll no. :</label>
+            <label id="rollNoVal" type="text"></label>
+        </div>
+        <div class="idFill">
+            <label for="contactNoVal">Contact no. :</label>
+            <label id="contactNoVal" ></label>
+        </div>
+        <button id="idPrint" onclick="printId()">Print Id</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
