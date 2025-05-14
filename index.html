@@ -35,17 +35,17 @@
                 </div>
             </form>
         </div>
-        <button id="submit" type="button" onclick="getTxt()">Submit</button>
-        <button id="clear" type="reset" onclick="doClear()">Clera All</button>
+        <div class="btns">
+            <button id="clear" type="reset" onclick="doClear()">Clera All</button>
         <button id="genIdCard" type="button" onclick="getIdCard()" >Get Id-Card</button>
+        </div>
+        
     </div>
-    <div id="idCard" class="print">
+    <div id="idCard">
         <div id="img">
             <img src="#" alt="Pic">
         </div>
-        <div id="idNav">
-            School Name
-        </div>
+        <div id="idNav"></div>
         <div class="idFill">
             <label for="studentNameVal">Student Name :</label>
             <label id="studentNameVal" type="text"></label>
@@ -62,7 +62,10 @@
             <label for="contactNoVal">Contact no. :</label>
             <label id="contactNoVal" ></label>
         </div>
-        <button id="idPrint" onclick="printId()">Print Id</button>
+        <div class="print-btn">
+            <button id="idPrint" onclick="printId()">Print Id</button>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
