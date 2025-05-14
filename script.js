@@ -13,7 +13,10 @@ function getIdCard(){
     document.getElementById("yearVal").innerText = document.getElementById("year").value;
     document.getElementById("rollNoVal").innerText = document.getElementById("roll.no").value;
     document.getElementById("contactNoVal").innerText = document.getElementById("contact.no").value;
+
+    
 }
+
 function printId(){
     window.print();
 }

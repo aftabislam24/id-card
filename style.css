@@ -71,6 +71,12 @@ html, body{
     transform: translateX(-50%);
     margin-bottom: 25px;
 }
+#img >#student-img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 .idFill{
     padding: 6px 0;
     text-transform: capitalize;
@@ -103,7 +109,8 @@ html, body{
 }
 @media print{
     body{
-        background-color: pink;
+        height: 100vh;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
