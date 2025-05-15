@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,8 +34,10 @@
                     <label for="contact.no">Contact.no :</label>
                     <input id="contact.no" type="number">
                 </div>
-                <div class="fill">
-                    <!-- <input type="file" id="imageInput" accept="image/*"> -->
+                <div class="fill image-path">
+                    <label for="imageInput">*Select Image</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <img src="" id="preview" width="50"  alt="">
                 </div>
             </form>
         </div>
@@ -46,7 +49,7 @@
     </div>
     <div id="idCard">
         <div id="img">
-            <!-- <img id="student-img" src="" alt="Pic"> -->
+            <img id="student-img" src="" alt="Pic">
         </div>
         <div id="idNav"></div>
         <div class="idFill">
@@ -72,4 +75,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
